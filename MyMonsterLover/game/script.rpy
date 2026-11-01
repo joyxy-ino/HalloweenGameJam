@@ -84,6 +84,7 @@ image moth_glitter:
 label start:
 
     scene bg_classroom with fade
+    play music "audio/class_ending_theme.mp3"
 
     "{i}It’s my first day at my new school{i}"
 
@@ -186,6 +187,7 @@ label start:
 
 label cafe:
     scene bg_black
+    play music "audio/cafe_theme.mp3"
     yn "{i}So...That's how I ended up in this situation{i}"
     scene bg_cafe with fade_out
     show player_uh at left
@@ -960,6 +962,7 @@ label yes:
 
     scene bg_distort with dissolve
 
+
     "Everything in the cafe goes quiet. There is a strange tension in the air, as if it is about to split open and tear - but held in all at once by an invisible, silent bubble."
 
     "The bubble bursts. Space shattering into stardust. There is no longer anything wrong. Everything is right. It is right it is right it is"
@@ -971,6 +974,7 @@ label yes:
         yoffset -425
     pause 0.4
 
+    play music "audio/class_ending_theme.mp3"
     "An eldritch creature now stands before you, split wings wrapped around itself. Surrounded by a cloud of shimmering scales. Beautiful as she always was."
     m_1 "Here I am, my love. Will you look upon me still?"
     menu:

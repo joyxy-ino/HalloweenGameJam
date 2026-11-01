@@ -20,26 +20,25 @@ define e = Character(
     what_layout='subtitle')
 
 define fade_out = Fade(0.0,0.0,2.0)
-
 image moth_transform:
-    glitch("moth_angry") # reliable slicing
+    "moth_angry" # reliable slicing
     pause 1.0
     zoom 2.5
     yanchor 0.7
-    glitch("moth_monster_angry", offset=100, randomkey=None) # bigger and always-random slicing
+    "moth_monster_angry" # bigger and always-random slicing
     pause 0.2
     yanchor 1.0
     zoom 1.0
-    glitch("moth_monster_angry", offset=60, randomkey=None)
+    "moth_monster_angry"
     pause 0.1
-    glitch("moth_monster_angry", offset=120, randomkey=None)
+    "moth_monster_angry"
     pause 0.1
     "moth_monster_angry"
 
 image moth_glitch:
     "moth_monster_angry"
     pause 1.5
-    glitch("moth_monster_angry", offset=100, randomkey=None) # bigger and always-random slicing
+    "moth_monster_angry" # bigger and always-random slicing
     pause 0.1
     repeat
 
@@ -48,7 +47,7 @@ image bad_ending:
     "ending_bad"
     Text("BAD END", size = 80, color = "#cf0000")
     pause 1.0
-    glitch ("ending_bad")
+    "ending_bad"
     Text("BAD END", size = 80, color = "#cf0000")
     pause 0.1 
     repeat
@@ -59,11 +58,11 @@ image good_ending:
     "ending_good"
 
 image moth_yay:
-    glitch("moth_happy") # reliable slicing
+    "moth_happy" # reliable slicing
     pause 1.0
-    glitch("moth_monster_normal", offset=100, randomkey=None) # bigger and always-random slicing
+    "moth_monster_normal" # bigger and always-random slicing
     pause 0.2
-    glitch("moth_monster_normal", offset=60, randomkey=None)
+    "moth_monster_normal"
     pause 0.1
     "moth_monster_love"
     #pause 0.1
